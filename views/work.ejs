@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs")  %>
+
+    <h2 class="mt-4 mb-4">Work List</h2>
+
+    <form action="/work" method="POST" class="mb-5">
+        <input type="text" name="task" class="form-control task-input" placeholder="New Item">
+        <button class="btn btn-primary add-button" type="submit">Add</button>
+    </form>
+    
+<%- include("partials/createtask.ejs")  %>
+
+<%- include("partials/footer.ejs")  %>

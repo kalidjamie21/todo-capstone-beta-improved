@@ -1,0 +1,9 @@
+<% if (locals.tasks) { %>
+    <% tasks.forEach((task) => { %>
+    <div class="task-holder mb-2">
+            <div class="checkbox-container">
+                <input type="checkbox" id="checktask" name="checktask">
+                <label for="checktask"> <%= task %> </label><br>
+            </div>
+    </div>   
+<% }) %>

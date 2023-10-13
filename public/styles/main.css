@@ -1,0 +1,79 @@
+html, body {
+    background-color: rgb(227, 255, 240);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 35px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none!important;
+    color: black;
+}
+
+li a:hover {
+    color: rgb(42, 162, 60);
+}
+
+.main-container {
+    /* position: absolute;  */
+    margin-top: 50px;
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    text-align: center;
+}
+
+form {
+    display: flex;
+    gap: 15px;
+}
+
+.task-input {
+    width: 300px;
+}
+
+.add-button {
+    background-color: rgb(17, 170, 17);
+    border-style: none;
+    width: 90px;
+}
+
+.add-button:hover {
+    background-color: darkgreen;
+}
+
+.task-holder {
+    background-color: white;
+    height: 80px;
+    width: 400px;
+    padding: 30px 0px 25px 0px;
+    display: flex;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: 2px 2px lightblue;
+
+
+}
+
+.task-container p {
+    margin: 0;
+}
+
+input[type=checkbox] {
+    width: 100px;
+}
+
+input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+  } 
